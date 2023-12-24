@@ -1,5 +1,7 @@
 shortcut for html structure - ! and hit enter
 
+<!-- just write an exclamation mark and you can hit the tab on your keyboard, then you will get very basic HTML structure -->
+
 <h1>Lorem</h1> - Lorem10 and hit enter - it will give 10 words for you or just type Lorem - it will give you some sentence for you
 
 # Flex Box:
@@ -198,3 +200,13 @@ box-shadow: 5px(x-axis-towards right) 5px(y-axis-towards down) rgba(0, 0, 0, 0.2
 /_ box-shadow: 10px 10px 5px lightblue inset; - The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow._/
 
 text-shadow: 5px 5px rgba(0, 0, 0, 0.228); for text
+
+# Hr tag
+
+we're not using this anymore as a rulte by HTML documentation..
+we're using it as like a content break
+we're going to hide it
+you should make it so it's styled so you can't see it
+`it's used to break up content`
+use border botton instead of this
+border:
