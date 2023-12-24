@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .badsize {
+        font-size: 48px;  /*px is absolute. we can't change*/
+        /* font-size: 1.25rem;  */
+        /* it means 20 pixels is  (0.0625 * 20px) rem/em = 1.25 rem/em */
+
+      }
+
+      .goodsize {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="badsize">Ranjith Kumar</p>
+    <p class="goodsize">Ranjith Kumar</p>
+    <!-- for this, font-size would be same if you apply either em or rem.. there is not different as this p tag doesn't in any wrapper tag -->
+    <p>Ranjith Kumar</p>
+    <div class="mybox">
+      <!-- every p tag already inside wrapper tag, right?. that's why i have added this -->
+      <p class="goodsize"></p>
+    </div>
+  </body>
+</html>

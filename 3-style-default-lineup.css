@@ -1,0 +1,42 @@
+.container {
+  width: 1024px;
+  background-color: rgb(18, 60, 12);
+  /* height: 204px; /* Text will overlap in case you have text would be more than 300 px (check with lorem 600).. solution for that, use min-height instead of this as always!*/
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgb(41, 196, 35);
+  min-height: 50px;
+}
+
+main {
+  background-color: rgb(49, 87, 8);
+  min-height: 200px;
+}
+
+.cards {
+  background-color: rgb(38, 107, 81);
+  min-height: 200px;
+  display: flex; /* used to order left to right */
+}
+
+.card1 {
+  background-color: rgb(97, 49, 143);
+  min-height: 200px;
+  width: 33.3%;
+}
+
+.card2 {
+  background-color: rgb(166, 129, 201);
+  min-height: 200px;
+  width: 33.3%;
+}
+
+.card3 {
+  background-color: rgb(83, 73, 92);
+  min-height: 200px;
+  width: 33.3%;
+}
