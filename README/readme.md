@@ -209,4 +209,9 @@ we're going to hide it
 you should make it so it's styled so you can't see it
 `it's used to break up content`
 use border botton instead of this
-border:
+
+`border-bottom: 1px solid lightgray;`
+
+box-sizing: border-box; /_it is very important for child to make responsive for all font-size (check with chrome font size setting)_/
+
+https://niva.io/tools/testimonial-generator - used to generate testimonials
