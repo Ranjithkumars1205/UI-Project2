@@ -1,0 +1,38 @@
+.navbutton {
+  background-color: violet;
+  padding: 12px 10px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.navbutton a {
+  text-decoration: none;
+  color: white;
+}
+
+/* This turns the drop down off when not used */
+.dropdown-box {
+  display: none;
+  /* I don't want to be a position: relative, which is this one.. By default, it has position: relative, so */
+  position: absolute; /*This is opposite name for relative.. it goes, i don't care where my buddies are(this dropdown box)..
+  i'm just going to go where i told(whatever we are applying to this i will take it up like a fresh). if we apply display block means, it will adjust in the new row..*/
+  margin-left: -10px;
+  /* z-index: 99; */
+  padding-top: 20px; /* we should use padding instead of margin-top: 20px; because it will cover over to navbutton.. inspect it and remove display none, we can get it. this dropdown is part of navbutton height */
+}
+
+/* This class turns the dropdown menu on during hover */
+.navbutton:hover .dropdown-box {
+  display: block;
+}
+
+.dropdown-box .navbutton {
+  background-color: rgba(128, 0, 0, 0.397);
+}
+
+.dropdown-box .navbutton:hover {
+  background-color: rgb(216, 29, 204);
+  transition-duration: 1s;
+}
