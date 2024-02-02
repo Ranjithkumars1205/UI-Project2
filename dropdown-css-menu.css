@@ -4,7 +4,8 @@
   width: 100px;
   text-align: center;
   display: inline-block;
-  position: relative;
+  position: relative; /* why we are putting relative here means dropbox should be relative(associated with) this navButton.. that's why..
+  to get them to stack on top (vertical position- column wise)*/
 }
 
 .navbutton a {
@@ -17,10 +18,12 @@
   display: none;
   /* I don't want to be a position: relative, which is this one.. By default, it has position: relative, so */
   position: absolute; /*This is opposite name for relative.. it goes, i don't care where my buddies are(this dropdown box)..
-  i'm just going to go where i told(whatever we are applying to this i will take it up like a fresh). if we apply display block means, it will adjust in the new row..*/
+  i'm just going to go where i told(whatever we are applying to this i will take it up like a fresh). if we apply display block means, it will adjust in the new row..
+  absolute has calculated from top or relative parent element*/
   margin-left: -10px;
-  /* z-index: 99; */
-  padding-top: 20px; /* we should use padding instead of margin-top: 20px; because it will cover over to navbutton.. inspect it and remove display none, we can get it. this dropdown is part of navbutton height */
+  z-index: 99; /*  z-index: 1000 would appear on top of a z-index 999 */
+  padding-top: 20px; /* we should use padding instead of margin-top: 20px; because it will cover over to navbutton.. inspect it and remove display none, we can get it. this dropdown is part of navbutton height 
+  margin is outside and padding is inside.. compare with margin-top as well*/
 }
 
 /* This class turns the dropdown menu on during hover */
@@ -28,6 +31,7 @@
   display: block;
 }
 
+/*  Only for dropdown-box which is associated with navbutton */
 .dropdown-box .navbutton {
   background-color: rgba(128, 0, 0, 0.397);
 }

@@ -192,3 +192,18 @@ nav a.myButton {
   flex-wrap: wrap;
   margin: 16px 0px;
 }
+
+/* .tbox:last-child {
+  font-size: 0.8rem;
+} */
+/* :first-of-type – Selects the first element of this type within any parent. So if you have two divs, each had within it a paragraph, image, paragraph, image. Then div img:first-of-type would select the first image inside the first div and the first image inside the second div. */
+/* 
+.tbox p:last-of-type {
+  font-size: 0.8rem;
+  padding-left: 30px;
+} */
+
+/* .tbox:last-child > p:last-of-type {
+  font-size: 0.8rem;
+  padding-left: 30px;
+} */

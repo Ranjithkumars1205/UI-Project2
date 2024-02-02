@@ -215,3 +215,5 @@ use border botton instead of this
 box-sizing: border-box; /_it is very important for child to make responsive for all font-size (check with chrome font size setting)_/
 
 https://niva.io/tools/testimonial-generator - used to generate testimonials
+
+div img:first-of-type – Selects the first element of this type within any parent. So if you have two divs, each had within it a paragraph, image, paragraph, image. Then div img:first-of-type would select `the first image` inside the first div and the `first image`(`not second image`) inside the second div.
